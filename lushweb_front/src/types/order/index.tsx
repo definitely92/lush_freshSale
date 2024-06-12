@@ -1,0 +1,69 @@
+export interface BuyShippingProps {
+	name: string;
+	mobile: string;
+	email: string;
+	shippingPrice: number;
+	shippingFreeAmount: number;
+	shippingPaymentType: string;
+	receiverName: string;
+	receiverSido: string;
+	receiverSigungu: string;
+	receiverEupmyeondong: string;
+	receiverZipcode: string;
+	receiverNewZipcode: string;
+	receiverAddress: string;
+	receiverAddressDetail: string;
+	receiverMobile1: string;
+	receiverMobile2: string;
+	receiverMobile3: string;
+	receiverMobile: string;
+	receiverPhone: string;
+}
+export interface BuyItemProps {
+	itemId: number;
+	itemImage: string;
+	itemCode: string;
+	itemUserCode: string;
+	itemName: string;
+	itemReturnFlag: string;
+	quantity: number;
+	userLevelDiscountPrice: number;
+	userLevelDiscountRate: number;
+	shipmentId: number;
+	shipmentReturnId: number;
+	shippingSequence: number;
+	shipmentGroupCode: string;
+	itemSequence: number;
+	parentItemSequence: number;
+	supplyPrice: number;
+	price: number;
+	salePrice: number;
+	purchasePrice: number;
+	commissionPrice: number;
+	commissionBasePrice: number;
+	commissionRate: number;
+	commissionType: string;
+	deliveryCompanyId: number;
+	deliveryCompanyName: string;
+	categoryId: number;
+	categoryGroupId: number;
+	categoryTeamId: number;
+	imageSrc: string;
+	deliveryType: string;
+	deviceType: string;
+	orderDeviceType: string;
+	shipmentReturnType: string;
+	revenueSalesStatus: string;
+	shippingReturn: number;
+	shippingInfoSequence: number;
+	choiceOption: ItemOptionProps;
+}
+export interface ItemOptionProps {
+	id: number;
+	stockCode: string;
+	optionType: string;
+	optionName1: string;
+	optionName2: string;
+	optionName3: string;
+	optionPrice: number;
+}
